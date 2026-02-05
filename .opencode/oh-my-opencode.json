@@ -12,22 +12,22 @@
 
   "agents": {
     "sisyphus": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 5000 },
       "maxTokens": 8192
     },
     "prometheus": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 5000 },
       "maxTokens": 8192
     },
     "metis": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "disabled" },
       "maxTokens": 4096
     },
     "momus": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
     "librarian": {
@@ -39,11 +39,11 @@
       "maxTokens": 4096
     },
     "multimodal-looker": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
     "atlas": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
     "build": {
@@ -51,7 +51,7 @@
       "maxTokens": 4096
     },
     "plan": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
     }
@@ -59,17 +59,17 @@
 
   "categories": {
     "ultrabrain": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 5000 },
       "maxTokens": 8192
     },
     "deep": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
     },
     "unspecified-high": {
-      "model": "github-copilot/claude-sonnet-4-5",
+      "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "disabled" },
       "maxTokens": 4096
     },
@@ -82,16 +82,15 @@
       "maxTokens": 2048
     },
     "writing": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
     "visual-engineering": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
     "artistry": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     }
   },
