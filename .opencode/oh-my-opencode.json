@@ -13,54 +13,47 @@
   "agents": {
     "sisyphus": {
       "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
-      "maxTokens": 4096
+      "thinking": { "type": "enabled", "budgetTokens": 5000 },
+      "maxTokens": 8192
     },
     "prometheus": {
       "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
-      "maxTokens": 4096
+      "thinking": { "type": "enabled", "budgetTokens": 5000 },
+      "maxTokens": 8192
     },
     "metis": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
+      "reasoningEffort": "medium",
       "maxTokens": 4096
     },
     "momus": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
-      "maxTokens": 4096
-    },
-    "oracle": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
+      "reasoningEffort": "medium",
       "maxTokens": 4096
     },
     "librarian": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "maxTokens": 2048
+      "model": "github-copilot/gpt-4o",
+      "maxTokens": 4096
     },
     "explore": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "maxTokens": 2048
+      "model": "github-copilot/gpt-4o",
+      "maxTokens": 4096
     },
     "multimodal-looker": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "maxTokens": 2048
+      "model": "github-copilot/gpt-4o",
+      "maxTokens": 4096
     },
     "atlas": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
       "maxTokens": 4096
     },
     "build": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
       "maxTokens": 4096
     },
     "plan": {
       "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
     }
   },
@@ -68,12 +61,12 @@
   "categories": {
     "ultrabrain": {
       "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
-      "maxTokens": 4096
+      "thinking": { "type": "enabled", "budgetTokens": 5000 },
+      "maxTokens": 8192
     },
     "deep": {
       "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
     },
     "unspecified-high": {
@@ -82,25 +75,23 @@
       "maxTokens": 4096
     },
     "unspecified-low": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "maxTokens": 2048
+      "model": "github-copilot/gpt-4o",
+      "maxTokens": 4096
     },
     "quick": {
-      "model": "github-copilot/claude-haiku-4-5",
+      "model": "github-copilot/gpt-4o",
       "maxTokens": 2048
     },
     "writing": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "maxTokens": 2048
+      "model": "github-copilot/gpt-4o",
+      "maxTokens": 4096
     },
     "visual-engineering": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
       "maxTokens": 4096
     },
     "artistry": {
-      "model": "github-copilot/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "model": "github-copilot/gpt-4o",
       "maxTokens": 4096
     }
   },
@@ -116,7 +107,7 @@
   },
 
   "sisyphus_agent": {
-    "planner_enabled": false,
+    "planner_enabled": true,
     "default_builder_enabled": false
   },
 
