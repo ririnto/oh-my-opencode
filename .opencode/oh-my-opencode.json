@@ -23,19 +23,27 @@
     },
     "metis": {
       "model": "anthropic/claude-sonnet-4-5",
-      "thinking": { "type": "disabled" },
+      "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
     },
     "momus": {
       "model": "github-copilot/gemini-3-flash",
       "maxTokens": 4096
     },
+    "oracle": {
+      "model": "github-copilot/gemini-3-pro",
+      "maxTokens": 8192
+    },
+    "hephaestus": {
+      "model": "github-copilot/gemini-3-pro",
+      "maxTokens": 8192
+    },
     "librarian": {
       "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "explore": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "anthropic/claude-haiku-4-5",
       "maxTokens": 4096
     },
     "multimodal-looker": {
@@ -54,6 +62,14 @@
       "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 3000 },
       "maxTokens": 4096
+    },
+    "sisyphus-junior": {
+      "model": "anthropic/claude-haiku-4-5",
+      "maxTokens": 4096
+    },
+    "OpenCode-Builder": {
+      "model": "github-copilot/grok-code-fast-1",
+      "maxTokens": 4096
     }
   },
 
@@ -66,7 +82,7 @@
     "deep": {
       "model": "anthropic/claude-sonnet-4-5",
       "thinking": { "type": "enabled", "budgetTokens": 3000 },
-      "maxTokens": 4096
+      "maxTokens": 8192
     },
     "unspecified-high": {
       "model": "anthropic/claude-sonnet-4-5",
@@ -74,11 +90,11 @@
       "maxTokens": 4096
     },
     "unspecified-low": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "anthropic/claude-haiku-4-5",
       "maxTokens": 4096
     },
     "quick": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "anthropic/claude-haiku-4-5",
       "maxTokens": 2048
     },
     "writing": {
@@ -90,30 +106,24 @@
       "maxTokens": 4096
     },
     "artistry": {
-      "model": "github-copilot/gemini-3-flash",
-      "maxTokens": 4096
+      "model": "github-copilot/gemini-3-pro",
+      "maxTokens": 8192
     }
   },
 
-  "disabled_agents": [
-    "oracle",
-    "hephaestus"
-  ],
-
   "background_task": {
-    "defaultConcurrency": 2,
-    "staleTimeoutMs": 120000
+    "defaultConcurrency": 3,
+    "staleTimeoutMs": 180000
   },
 
   "sisyphus_agent": {
     "planner_enabled": true,
-    "default_builder_enabled": false
+    "default_builder_enabled": true
   },
 
   "experimental": {
     "dynamic_context_pruning": {
-      "enabled": true,
-      "notification": "minimal"
+      "enabled": false
     }
   }
 }
