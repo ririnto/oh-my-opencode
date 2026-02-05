@@ -22,33 +22,32 @@
       "maxTokens": 8192
     },
     "metis": {
-      "model": "github-copilot/gpt-4o",
-      "reasoningEffort": "medium",
+      "model": "github-copilot/claude-sonnet-4-5",
+      "thinking": { "type": "disabled" },
       "maxTokens": 4096
     },
     "momus": {
-      "model": "github-copilot/gpt-4o",
-      "reasoningEffort": "medium",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "librarian": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "explore": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "multimodal-looker": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "atlas": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "build": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "plan": {
@@ -75,23 +74,24 @@
       "maxTokens": 4096
     },
     "unspecified-low": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "quick": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 2048
     },
     "writing": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     },
     "visual-engineering": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/claude-sonnet-4-5",
+      "thinking": { "type": "disabled" },
       "maxTokens": 4096
     },
     "artistry": {
-      "model": "github-copilot/gpt-4o",
+      "model": "github-copilot/grok-code-fast-1",
       "maxTokens": 4096
     }
   },
